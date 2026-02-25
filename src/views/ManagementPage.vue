@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import { DataBaseIcon } from "tdesign-icons-vue-next";
 
 interface TopicItem {
   id: string;
@@ -108,7 +109,7 @@ const handleCardClick = (topic: TopicItem) => {
           <!-- 卡片头部 -->
           <div class="card-header">
             <div class="card-icon">
-              <span class="icon-emoji">{{ topic.icon }}</span>
+              <span class="icon-emoji"><DataBaseIcon /></span>
               <div class="icon-glow"></div>
             </div>
             <div class="header-content">
